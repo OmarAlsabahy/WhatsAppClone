@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navBar">#232D36</color>
+    <color name="navBarText">#78818A</color>
+    <color name="mainColor">#101D25</color>
+    <color name="floatButoon">#06AC9E</color>
+    <color name="tabLayoutSelectedText">#24837B</color>
+    <color name="chatText">#566168</color>
+</resources>
