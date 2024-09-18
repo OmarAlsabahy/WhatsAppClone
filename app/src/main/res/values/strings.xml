@@ -9,4 +9,10 @@
     <string name="textview">TextView</string>
     <string name="status">Status</string>
     <string name="calls">Calls</string>
+    <string name="welcome_to_whatsapp">Welcome To Whatsapp</string>
+    <string name="send">Send</string>
+    <string name="verify">Verify</string>
+    <string name="enter_your_username">Enter Your UserName</string>
+    <string name="submit">submit</string>
+    <string name="message">Message</string>
 </resources>

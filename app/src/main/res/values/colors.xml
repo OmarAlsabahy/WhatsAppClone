@@ -8,4 +8,6 @@
     <color name="floatButoon">#06AC9E</color>
     <color name="tabLayoutSelectedText">#24837B</color>
     <color name="chatText">#566168</color>
+    <color name="senderColor">#105247</color>
+    <color name="recieverColor">#3c3c3d</color>
 </resources>

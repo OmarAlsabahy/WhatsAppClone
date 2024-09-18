@@ -16,19 +16,25 @@ import com.example.whatsappclone.ViewPager.ViewPagerAdapter;
 import com.example.whatsappclone.databinding.ActivityMainBinding;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding ;
-    ViewPagerAdapter adapter;
-    ArrayList<Model>fragments;
+    private ActivityMainBinding binding ;
+    private ViewPagerAdapter adapter;
+    private ArrayList<Model>fragments;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         fragments = new ArrayList<>();
         adapter = new ViewPagerAdapter(getSupportFragmentManager(),getLifecycle());
+
         EdgeToEdge.enable(this);
         setContentView(binding.getRoot());
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -36,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
 
         //Seeding FragmentsList
         fragments.add(new Model(new ChatsFragment() , getString(R.string.chatFragment)));

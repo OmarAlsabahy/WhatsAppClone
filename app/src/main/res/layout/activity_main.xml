@@ -92,7 +92,7 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:backgroundTint="@color/floatButoon"
-        app:cornerRadius="@dimen/_50sdp"
+        app:cornerRadius="@dimen/_25sdp"
         app:icon="@drawable/chat"
         app:iconSize="@dimen/_15sdp"
         app:iconTint="@color/white"
